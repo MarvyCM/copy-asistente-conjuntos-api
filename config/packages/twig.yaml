@@ -1,0 +1,4 @@
+twig:
+    exception_controller: null
+    default_path: '%kernel.project_dir%/templates'
+    strict_variables: '%kernel.debug%'

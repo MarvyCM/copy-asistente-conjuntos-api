@@ -1,0 +1,38 @@
+App\Entity\OrigenDatos:
+    attributes:
+        id:
+           groups: ['descripcionDatos']
+        tipoOrigen:
+            groups: ['descripcionDatos']
+        data:
+            groups: ['descripcionDatos']
+        tipoBaseDatos:
+            groups: ['descripcionDatos']
+        host:
+            groups: ['descripcionDatos']
+        puerto:
+            groups: ['descripcionDatos']
+        servicio:
+            groups: ['descripcionDatos']
+        esquema:
+            groups: ['descripcionDatos']
+        tabla:
+            groups: ['descripcionDatos']
+        usuarioDB:
+            groups: ['descripcionDatos']
+        contrasenaDB:
+            groups: ['descripcionDatos']
+        alineacionEntidad:
+            groups: ['descripcionDatos']
+        alineacionRelaciones:
+            groups: ['descripcionDatos']
+        usuario:
+            groups: ['descripcionDatos']
+        sesion:
+            groups: ['descripcionDatos']
+        campos:
+            groups: ['descripcionDatos']
+        creadoEl:
+            groups: ['descripcionDatos']
+        actualizadoEn:
+            groups: ['descripcionDatos']

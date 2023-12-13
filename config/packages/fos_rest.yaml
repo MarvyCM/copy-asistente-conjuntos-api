@@ -1,0 +1,31 @@
+fos_rest:
+    body_converter:
+        enabled: true
+    allowed_methods_listener: true
+    param_fetcher_listener: true
+    view:
+        mime_types:
+            json: ['application/json']
+        empty_content: 200
+        view_response_listener: true
+        failed_validation: HTTP_BAD_REQUEST
+        formats:
+            json: true
+            xml: false
+    body_listener:
+        decoders:
+            json: fos_rest.decoder.json
+    format_listener:
+        rules:
+            - { path: '/api/v1', priorities: ['json'], fallback_format: json, prefer_extension: false }
+            - { path: '/api', priorities: ['json'], fallback_format: json, prefer_extension: false }
+            - { path: '^/', stop: true, fallback_format:  html }
+    exception:
+        enabled: true
+        codes:
+            'Symfony\Component\Routing\Exception\ResourceNotFoundException': 404
+            'Doctrine\ORM\OptimisticLockException': HTTP_CONFLICT
+        messages:
+            'Symfony\Component\Routing\Exception\ResourceNotFoundException': true
+    serializer:
+        serialize_null: true

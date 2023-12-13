@@ -1,0 +1,22 @@
+nelmio_api_doc:
+    documentation:
+        info:
+            title: Open Data Aragón
+            description: ApiRest para la aplicación de asistente carga datos
+            version: 1.0.0
+        servers:
+          - url: http://localhost
+            description: API over HTTP
+          - url: https://localhost
+            description: API over HTTPS
+        securityDefinitions:
+            Bearer:
+                type: apiKey
+                description: 'Value: Bearer [jwt]'
+                name: Authorization
+                in: header
+        security:
+            - Bearer: []
+    areas: # to filter documented routes
+        path_patterns:
+            - ^/api(?!/doc) # Accepts routes under /api except /api/doc

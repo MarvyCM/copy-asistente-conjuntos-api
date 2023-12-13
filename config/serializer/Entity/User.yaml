@@ -1,0 +1,26 @@
+App\Entity\User:
+    attributes:
+        id:
+            groups: ['user']
+        name:
+            groups: ['user']
+        email:
+            groups: ['user']
+        username:
+            groups: ['user']
+        ldapToken:
+            groups: ['user']
+        salt:
+            groups: ['user']
+        password:
+            groups: ['user']
+        plainPassword:
+            groups: ['user']
+        roles:
+            groups: ['user']
+        createdAt:
+            groups: ['user']
+        updatedAt:
+            groups: ['user']
+
+ 

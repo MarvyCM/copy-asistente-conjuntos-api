@@ -1,0 +1,59 @@
+App\Entity\DescripcionDatos:
+    attributes:
+        id:
+           groups: ['descripcionDatos']
+        denominacion:
+            groups: ['descripcionDatos']
+        identificacion:
+            groups: ['descripcionDatos']
+        descripcion:
+            groups: ['descripcionDatos']
+        frecuenciaActulizacion:
+            groups: ['descripcionDatos']
+        fechaInicio:
+            groups: ['descripcionDatos']
+        fechaFin:
+            groups: ['descripcionDatos']
+        territorio:
+            groups: ['descripcionDatos']
+        instancias:
+            groups: ['descripcionDatos']
+        organoResponsable:
+            groups: ['descripcionDatos']
+        finalidad:
+            groups: ['descripcionDatos']
+        condiciones:
+            groups: ['descripcionDatos']
+        vocabularios:
+            groups: ['descripcionDatos']
+        servicios:
+            groups: ['descripcionDatos']
+        etiquetas:
+            groups: ['descripcionDatos']
+        estructura:
+            groups: ['descripcionDatos']
+        estructuraDenominacion:
+            groups: ['descripcionDatos']
+        aspectosFormales:
+            groups: ['descripcionDatos']
+        licencias:
+            groups: ['descripcionDatos']
+        formatos:
+            groups: ['descripcionDatos']
+        usuario:
+            groups: ['descripcionDatos']
+        sesion:
+            groups: ['descripcionDatos']
+        estado:
+            groups: ['descripcionDatos']
+        estadoAlta:
+            groups: ['descripcionDatos']
+        origenDatos:
+            groups: ['descripcionDatos'] 
+        creadoEl:
+            groups: ['descripcionDatos']
+        actualizadoEn:
+            groups: ['descripcionDatos']
+
+
+

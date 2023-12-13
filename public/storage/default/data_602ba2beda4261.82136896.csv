@@ -1,0 +1,5 @@
+BusinessEntityID,Title,FirstName,MiddleName,LastName,Suffix,JobTitle,PhoneNumber,PhoneNumberType,EmailAddress,EmailPromotion,AddressLine1,AddressLine2,City,StateProvinceName,PostalCode,CountryRegionName,AdditionalContactInfo,BirthDate
+1,NULL,Ken,J,S�nchez,NULL,Chief Executive Officer,697-555-0142,Cell,ken0@adventure-works.com,0,4350 Minute Dr.,NULL,Newport Hills,Washington,98006,United States,NULL,02-03-1963
+2,NULL,Terri,Lee,Duffy,NULL,Vice President of Engineering,819-555-0175,Work,terri0@adventure-works.com,1,7,United States,NULL,01-09-1965
+3,NULL,Roberto,NULL,Tamburello,NULL,Engineering Manager,212-555-0187,Cell,roberto0@adventure-works.com,0,2137 Birchwood Dr,NULL,Redmond,Washington,98052,United States,NULL,13-12-1968
+4,NULL,Rob,NULL,Walters,NULL,Senior Tool Designer,612-555-0100,Cell,rob0@adventure-works.com,0,5678 Lakeview Blvd.,NULL,Minneapolis,Minnes

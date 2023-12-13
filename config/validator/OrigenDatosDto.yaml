@@ -1,0 +1,92 @@
+App\Form\Model\OrigenDatosDto:
+    properties:
+        idDescripcion:
+            - NotBlank:  { message: 'El id de la descripción datos relacionada es requerida' }
+        tipoOrigen:
+            - NotBlank:  { message: 'El tipoOrigen del origen datos es requerido'  }
+            - Length:
+                min: 3
+                max: 15
+                minMessage: 'El tipo origen datos debe tener un minimo de {{ limit } caracteres'
+                maxMessage: 'El tipo origen datos debe tener un máximo de {{ limit } caracteres'
+                allowEmptyString: false
+        data:
+            - NotBlank: { message: 'El tipoOrigen del origen datos es requerido', groups: [data] }
+            - Length:
+                min: 3
+                max: 1024
+                minMessage: 'El origen datos debe tener un minimo de {{ limit } caracteres'
+                maxMessage: 'El origen datos debe tener un máximo de {{ limit } caracteres'
+                allowEmptyString: false
+        tipoBaseDatos:
+            - NotBlank: { message: 'El tipo base datos  del origen datos es requerido', groups: [database] }
+            - Length:
+                min: 3
+                max: 16
+                minMessage: 'El tipo base datos debe tener un minimo de {{ limit } caracteres'
+                maxMessage: 'El tipo base datos debe tener un máximo de {{ limit } caracteres'
+                allowEmptyString: false           
+        host: 
+            - NotBlank: { message: 'El host del origen datos es requerida', groups: [database] }
+            - Length:
+                min: 5
+                max: 64
+                minMessage: 'El host debe tener un minimo de {{ limit } caracteres'
+                maxMessage: 'El host debe tener un máximo de {{ limit } caracteres'
+                allowEmptyString: false           
+        servicio:
+            - NotBlank: { message: 'El servicio del origen datos es requerido', groups: [database] }
+            - Length:
+                min: 3
+                max: 128
+                minMessage: 'El servicio debe tener un minimo de {{ limit }} caracteres'
+                maxMessage: 'El servicio debe tener un máximo de {{ limit }} caracteres'
+                allowEmptyString: false  
+        esquema: 
+            - NotBlank: { message: 'El esquema del origen datos es requerida', groups: [database] }
+            - Length:
+                min: 3
+                max: 128
+                minMessage: 'El esquema debe tener un minimo de {{ limit }} caracteres'
+                maxMessage: 'El esquema debe tener un máximo de {{ limit }} caracteres'
+                allowEmptyString: false  
+        tabla: 
+            - NotBlank: { message: 'La tabla del origen datos es requerida', groups: [database] }
+            - Length:
+                min: 3
+                max: 128
+                minMessage: 'La tabla debe tener un minimo de {{ limit } caracteres'
+                maxMessage: 'La tabla debe tener un máximo de {{ limit }} caracteres'
+                allowEmptyString: false  
+        usuario:
+            - NotBlank: { message: 'El usuario de la sesión es querida'}
+            - Length:
+                min: 3
+                max: 255
+                minMessage: 'El usuario debe tener un minimo de {{ limit }} caracteres'
+                maxMessage: 'El usuario debe tener un máximo de {{ limit }} caracteres'
+                allowEmptyString: false
+        sesion:
+            - NotBlank: { message: 'La sesión del origen datos es querida'}
+            - Length:
+                min: 3
+                max: 255
+                minMessage: 'La sesión debe tener un minimo de {{ limit }} caracteres'
+                maxMessage: 'La sesión debe tener un máximo de {{ limit }} caracteres'
+                allowEmptyString: false
+        usuarioDB:
+            - NotBlank: { message: 'El usuarioDB del origen datos es requerido', groups: [database] }
+            - Length:
+                min: 3
+                max: 64
+                minMessage: 'El usuario debe tener un minimo de {{ limit }} caracteres'
+                maxMessage: 'El usuario debe tener un máximo de {{ limit }} caracteres'
+                allowEmptyString: false
+        contrasenaDB:
+            - NotBlank: { message: 'La contraseña del origen datos es requerida', groups: [database] }
+            - Length:
+                min: 3
+                max: 32
+                minMessage: 'La contraseña debe tener un minimo de {{ limit }} caracteres'
+                maxMessage: 'la contraseña debe tener un máximo de {{ limit }} caracteres'
+                allowEmptyString: false  
